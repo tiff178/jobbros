@@ -1,7 +1,7 @@
 import './App.css';
 import {GoogleOAuthProvider, GoogleLogin} from '@react-oauth/google'
 
-const CLIENT_ID = "106809819420-9atfhge2d0em8f1qg4lju3euargrdgmh.apps.googleusercontent.com"
+const CLIENT_ID = process.env.REACT_APP_CLIENT_ID
 
 function App() {
   return (
