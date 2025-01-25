@@ -17,7 +17,7 @@ function Login() {
                     onSuccess={(credentialResponse) => {
                         console.log("Login Success", credentialResponse);
 
-                        navigate("./applicants/Home.js");
+                        navigate("/home");
                     }}
                     onError={() => {
                         console.log("Login Failed");
