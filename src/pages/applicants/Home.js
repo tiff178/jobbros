@@ -1,4 +1,5 @@
 import React from 'react';
+import notificationIcon from './img/notification-icon.svg';
 
 function Home() {
   return (
@@ -24,10 +25,10 @@ function Home() {
             </div>
           </div>
         </div>
-        <div data-layer="notifications_none_24px" className="NotificationsNone24px" style={{width: 71, height: 64, paddingLeft: 11.83, paddingRight: 11.83, paddingTop: 6, paddingBottom: 6, justifyContent: 'center', alignItems: 'center', display: 'inline-flex'}}>
-          <img data-layer="icon/social/notifications_none_24px" className="IconSocialNotificationsNone24px" style={{width: 47.33, height: 52}} src="https://via.placeholder.com/47x52" alt="Notifications" />
+        <div data-layer="notifications_none_24px" className="NotificationsNone24px" style={{top: '20px', right: '20px', position: 'absolute', width: 71, height: 64, paddingLeft: 11.83, paddingRight: 11.83, paddingTop: 6, paddingBottom: 6, justifyContent: 'center', alignItems: 'center', display: 'inline-flex'}}>
+          <img data-layer="icon/social/notifications_none_24px" className="IconSocialNotificationsNone24px" style={{width: 47.33, height: 52}} src={notificationIcon} alt="Notifications" />
         </div>
-        <div data-layer="Frame 10" className="Frame10" style={{height: 733, flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 101, display: 'inline-flex'}}>
+        <div data-layer="Frame 10" className="Frame10" style={{top: '150px', right: '20px', position: 'absolute', height: 733, flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 101, display: 'inline-flex'}}>
           <div data-layer="job-search" className="JobSearch" style={{alignSelf: 'stretch', height: 110, paddingLeft: 40, paddingRight: 40, paddingTop: 73, paddingBottom: 73, background: '#D9D9D9', borderRadius: 20, flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: 10, display: 'flex'}}>
             <div data-layer="Job Search" className="JobSearch" style={{textAlign: 'center', color: 'black', fontSize: 35, fontFamily: 'Outfit', fontWeight: '700', wordWrap: 'break-word'}}>Job Search</div>
           </div>
