@@ -52,7 +52,7 @@ function Home() {
             <div data-layer="Saved Jobs" className="SavedJobs" style={{textAlign: 'center', color: 'black', fontSize: 35, fontFamily: 'Outfit', fontWeight: '700', wordWrap: 'break-word'}}>Saved Jobs</div>
           </div>
           <div onClick={() => navigate("/resources")} data-layer="resource" className="Resource" style={{alignSelf: 'stretch', height: 110, paddingLeft: 40, paddingRight: 40, paddingTop: 73, paddingBottom: 73, background: '#D9D9D9', borderRadius: 20, flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: 10, display: 'flex'}}>
-            <div data-layer="Resources" className="Resource" style={{textAlign: 'center', color: 'black', fontSize: 35, fontFamily: 'Outfit', fontWeight: '700', wordWrap: 'break-word'}}>Resource</div>
+            <div data-layer="Resources" className="Resource" style={{textAlign: 'center', color: 'black', fontSize: 35, fontFamily: 'Outfit', fontWeight: '700', wordWrap: 'break-word'}}>Resources</div>
           </div>
         </div>
       </div>
