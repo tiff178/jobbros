@@ -33,7 +33,7 @@ function Home() {
             <h2>{user?.name}</h2>
           </div>
           <div className="User">
-            <h4 onClick={() => navigate("/profile")}>Update Profile</h4>
+            <h4 onClick={() => navigate("/profile")}>Edited Profile</h4>
             <h4 onClick={() => navigate("/resume")}>Update Resume</h4>
           </div>
           <div className="Logout" onClick={handleLogout}>

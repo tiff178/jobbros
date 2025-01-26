@@ -7,33 +7,28 @@ const Resume = () => {
 
   // State for Resume Data
   const [resumeData, setResumeData] = useState({
-    name: "Lorem Dola Ipsum",
-    career: "Software Engineer",
+    name: "Harley Evelyn Nguyen",
+    career: "Data Analyst",
     contactInfo: {
       phone: "07661892982",
-      email: "loremipsum@gmail.com",
-      website: "www.loremipsum.com",
-      facebook: "www.facebook.com/lorem",
-      instagram: "@loremipsum",
-      address: "37 Pramount St, London",
+      email: "letn7@uci.com",
+      address: "Zot Zot St, Irvine",
     },
     skills: [
-      { skill: "Javascript", progress: 70 },
-      { skill: "Photoshop", progress: 90 },
+      { skill: "SQL", progress: 70 },
+      { skill: "Tableau", progress: 90 },
     ],
-    about: "Lorem ipsum dolor sit amet, consectetur adipisicing elit...",
+    about: "Undergraduate student with passion in data and economics.",
     experience: [
       {
-        company: "Microsoft",
-        years: "2017 - 2019",
-        role: "Junior Developer",
-        description: "Worked on frontend development using React and JavaScript.",
+        company: "UCI Office of Information and Technology",
+        years: "2024-206",
+        role: "Data Analyst"
       },
       {
-        company: "Google",
-        years: "2019 - 2021",
-        role: "Web Developer",
-        description: "Led a team to develop scalable web applications.",
+        company: "HaulPay",
+        years: "2023-2024",
+        role: "AI/ML Intern"
       },
     ],
   });
