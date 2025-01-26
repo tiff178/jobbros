@@ -1,0 +1,73 @@
+/* Main container background with theme */
+.Main {
+    background: radial-gradient(circle at center, #040406, #13111C 60%, #040406 100%);
+    color: white;
+    height: 100vh; /* Full-screen height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space out header, content, and footer */
+    align-items: center;
+    padding: 0;
+    box-shadow: inset 0 0 30px rgba(0, 162, 255, 0.2),
+        inset 0 0 40px rgba(255, 255, 255, 0.1);
+}
+
+/* Navbar styling */
+.Navbar {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background: transparent;
+}
+
+.Navbar-logo {
+    height: 50px;
+}
+
+/* Main content styling */
+.Login-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center content vertically */
+    gap: 40px; /* Adds equal spacing between items */
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Removes any default margin */
+}
+
+/* Slogan */
+.Slogan {
+    margin: 0;
+    font-size: 6vw;
+    font-weight: 400;
+    letter-spacing: 0.4rem; /* Adjusted spacing for better fit */
+    font-family: 'Decovar Draw', sans-serif;
+    font-variation-settings: 'RSEC' 60.00;
+    background: linear-gradient(to bottom, #a67d83 0%, #616cd3 20%, #84fafc 43%, #fdfbf3 60%, #f9f697 82%, #f4d186 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+/* Google Login Button */
+.GoogleLogin {
+    transform: scale(2.0);
+    transition: transform 0.2s ease; 
+}
+
+.GoogleLogin:hover {
+    transform: scale(1.3);
+}
+
+
+/* Footer styling */
+.Footer {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9rem;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.8);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}

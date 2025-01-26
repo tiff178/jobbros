@@ -19,6 +19,7 @@ function Search() {
           alt="Home"
           style={{ height: "55px" }}
         />
+        
       </div>
       {/* Header Section */}
       <header className="SearchHeader">
