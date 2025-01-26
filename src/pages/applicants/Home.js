@@ -50,7 +50,7 @@ function Home() {
               Saved Jobs
             </div>
             <div className="Button" onClick={() => navigate("/resources")}>
-              Resource
+              Resources
             </div>
           </div>
         </div>
