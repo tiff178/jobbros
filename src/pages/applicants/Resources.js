@@ -62,7 +62,7 @@ function Resources() {
       </div>
 
       {/* Header */}
-      <h1 className="mb-5 text-center">Resources</h1>
+      <h1 className="text-center">Resources</h1>
 
       {/* Resource Cards */}
       <div className="row justify-content-center">
@@ -75,7 +75,7 @@ function Resources() {
               href={resource.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-decoration-none text-center"
+              className="text-decoration-none text-center Chosen"
             >
               <div
                 className="card shadow-sm"
