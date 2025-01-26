@@ -6,4 +6,4 @@ This project aims to solve the issue of tracking your job applications and their
 
 Website: https://jobbros-production.up.railway.app/
 
-For more information, check our [devpost](https://devpost.com/software/jobbros)
+For more information, check our [Devpost](https://devpost.com/software/jobbros).
