@@ -24,12 +24,14 @@ function Login() {
                         const userData = {
                             email: decoded.email,
                             name: decoded.name,
-                            picture: decoded.picture
+                            profileURL: decoded.picture
                         };
+
+                        localStorage.setItem("user", JSON.stringify(userData));
 
                         console.log("User Data", userData);
 
-                        navigate("/home", {state: {user: userData}});
+                        navigate("/home");
                     }}
                     onError={() => {
                         console.log("Login Failed");
