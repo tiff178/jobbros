@@ -27,20 +27,22 @@ function Login() {
                             console.log("Decoded Token", decoded);
                             console.log("Login Success", credentialResponse);
 
-                            const userData = {
-                                email: decoded.email,
-                                name: decoded.name,
-                                picture: decoded.picture
-                            };
+                        const userData = {
+                            email: decoded.email,
+                            name: decoded.name,
+                            profileURL: decoded.picture
+                        };
+
+                        localStorage.setItem("user", JSON.stringify(userData));
 
                             console.log("User Data", userData);
 
-                            navigate("/home", { state: { user: userData } });
-                        }}
-                        onError={() => {
-                            console.log("Login Failed");
-                        }}
-                    />
+                        navigate("/home");
+                    }}
+                    onError={() => {
+                        console.log("Login Failed");
+                    }}
+                />
                 </header>
             </div>
         </GoogleOAuthProvider>
