@@ -1,96 +1,71 @@
-html {
-    height: 100vh;
-}
-
-.Home {
-    background-color: #f8f9fa;
-}
-
+/* Left section (Sidebar) */
 .SiteBar {
-    background-color: #81D8D0;
+    background-color: #a2e2dc; /* Matching light teal background */
+    height: 100vh; /* Full height of the viewport */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center content vertically */
     padding: 20px;
-    border-right: 2px solid #ddd;
-}
-
-.User {
-    margin: 16% auto;
+  }
+  
+  .User {
     text-align: center;
-}
-
-.UserImage {
-    width: 15%;
-    height: 15%;
-    background-color: white;
+    margin-bottom: 20px;
+  }
+  
+  .UserImage {
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
-    margin: 8px auto;
-    border: 2px solid #ccc;
-}
-
-.User h2 {
-    margin: 15px 0;
-    font-size: 2rem;
-    color: #000000;
-}
-
-.User h4 {
-    margin: 30px 0;
-    font-size: 1.5rem;
+    margin-bottom: 10px; /* Spacing below the image */
+  }
+  
+  .User h2 {
+    margin-top: 10px;
+  }
+  
+  .User h4 {
+    margin: 10px 0;
     cursor: pointer;
-    color: #4a525a;
-}
-
-.User h4:hover {
-    color: #000;
-}
-.Logout {
-    width: 30%;
-    max-height: fit-content;
-    margin: 10% auto;
-    background-color: #343a40;
+  }
+  
+  .Logout {
+    background-color: #333;
     color: white;
-    border: none;
-    padding: 10px 5px;
+    text-align: center;
+    padding: 10px;
     border-radius: 20px;
-    font-size: 1.2rem;
-    font-weight: bold;
     cursor: pointer;
+    margin-top: 20px; /* Space above logout button */
+  }
+  
+  /* Right section */
+  .Notifications {
+    text-align: right;
+    padding: 10px;
+  }
+  
+  .Selection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center content vertically */
+    height: calc(100vh - 50px); /* Full height minus notification bar */
+  }
+  
+  .Button {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 15px 30px;
+    margin: 10px 0; /* Space between buttons */
     text-align: center;
-}
-
-.Logout:hover {
-    background-color: #495057;
-}
-
-.Notifications {
-    position: absolute;
-    top: 20px;
-    right: 20px;
+    font-size: 18px;
+    border-radius: 8px;
     cursor: pointer;
-}
-
-.Selection {
-    margin: 12% 0;
-}
-
-.Button {
-    width: 50%;
-    padding: 3.5%;
-    margin: 8% auto;
-    background-color: #d9d9d9;
-    text-align: center;
-    border-radius: 10px;
-    font-size: 1.3rem;
-    font-weight: bolder;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.Button:hover {
-    background-color: #c0c0c0;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
-}
-
-.Button:active {
-    background-color: #a6a6a6;
-}
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .Button:hover {
+    background-color: #ddd;
+  }  

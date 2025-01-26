@@ -4,26 +4,23 @@ import { useNavigate, useLocation } from "react-router-dom";
 import "./Home.css";
 import "bootstrap/dist/css/bootstrap.css";
 
-
 function Home() {
   const location = useLocation();
   const { user } = location.state || {};
   const navigate = useNavigate();
 
   const handleLogout = () => {
-    // Clear any session or authentication data (e.g., localStorage, cookies, etc.)
-    localStorage.removeItem("authToken"); // Example of clearing a token, adjust as necessary
-
-    // Redirect to the login page
-    navigate("/"); // '/login' is the route for your login page
+    localStorage.removeItem("authToken");
+    navigate("/"); // Redirect to login
   };
 
   return (
     <div className="Home container-fluid">
       <div className="row">
+        {/* Left Sidebar */}
         <div className="col-5 SiteBar">
           <div className="User">
-            <img src={user?.picture} className="UserImage" alt="Your Profile"/>
+            <img src={user?.picture} className="UserImage" alt="Your Profile" />
             <h2>{user?.name}</h2>
           </div>
           <div className="User">
@@ -35,6 +32,8 @@ function Home() {
             Logout
           </div>
         </div>
+
+        {/* Right Section */}
         <div className="col-7">
           <div className="Notifications">
             <img src={notificationIcon} alt="Notifications" />
