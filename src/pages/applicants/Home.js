@@ -24,7 +24,7 @@ function Home() {
   };
 
   return (
-    <div className="Home container-fluid">
+    <div className="container-fluid">
       <div className="row">
         {/* Left Sidebar */}
         <div className="SiteBar col-5">

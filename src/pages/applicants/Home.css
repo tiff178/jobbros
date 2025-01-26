@@ -1,6 +1,7 @@
 /* Left section (Sidebar) */
 .SiteBar {
     padding: 0;
+    margin: 0;
     background: radial-gradient(circle at top left, #040406, #13111C 60%, #040406 100%);
     display: flex;
     flex-direction: column;
@@ -33,6 +34,7 @@
 
 .User h4 {
     margin: 30% 0;
+    font-size: 1.5rem;
     color: rgb(156, 156, 156);
     cursor: pointer;
 }
@@ -51,7 +53,7 @@
     color: #170F1E;
     cursor: pointer;
     font-family: 'Inter', sans-serif;
-    font-size: 16px;
+    font-size: 1.3rem;
     font-weight: 670;
     line-height: 24px;
     overflow: hidden;
@@ -93,7 +95,6 @@
 .Notifications {
     text-align: right;
     margin-top: 20px;
-    margin-left: 15%;
 }
 
 .Main {
@@ -124,7 +125,8 @@
     padding: 15px 0px;
     margin: 15px 0;
     text-align: center;
-    font-size: 18px;
+    font-weight: bold;
+    font-size: 1.3rem;
     border-radius: 8px;
     color: white;
     cursor: pointer;
