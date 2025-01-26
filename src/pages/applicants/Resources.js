@@ -1,15 +1,7 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate
 
 function Resources() {
-  useEffect(() => {
-    document.body.style.display = 'flex'; // Center content horizontally and vertically
-    document.body.style.flexDirection = 'column'; // Arrange title and resources vertically
-    document.body.style.justifyContent = 'center'; // Center content vertically
-    document.body.style.alignItems = 'center'; // Center content horizontally
-    document.body.style.height = '100vh'; // Ensure full height of the viewport
-    document.body.style.margin = 0; // Remove default margin
-  }, []);
 
   const navigate = useNavigate(); // Initialize useNavigate
   const handleHomeButtonClick = () => {
