@@ -1,5 +1,3 @@
-/* App.css */
-
 /* Overall page styling */
 .App {
   text-align: center;
@@ -28,7 +26,7 @@
 
 /* Content section (Google Sign In) */
 .App-header {
-  background-color: #282c34; /* Keep the original dark background */
+  background: radial-gradient(circle at top left, #040406, #13111C 60%, #040406 100%);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -39,6 +37,27 @@
   padding-top: 80px; /* Adds space below the fixed navbar */
 }
 
+.slogan {
+  font-family: 'Poppins', sans-serif;
+  font-size: 48px;
+  color: white;
+  position: relative;
+  animation: glitch 1.5s infinite;
+}
+
+@keyframes glitch {
+  0% {
+    text-shadow: 2px 2px 0 rgba(255, 0, 0, 0.8), -2px -2px 0 rgba(0, 255, 0, 0.8), 2px -2px 0 rgba(0, 0, 255, 0.8);
+  }
+  50% {
+    text-shadow: -2px -2px 0 rgba(255, 0, 0, 0.8), 2px 2px 0 rgba(0, 255, 0, 0.8), -2px 2px 0 rgba(0, 0, 255, 0.8);
+  }
+  100% {
+    text-shadow: 2px 2px 0 rgba(255, 0, 0, 0.8), -2px -2px 0 rgba(0, 255, 0, 0.8), 2px -2px 0 rgba(0, 0, 255, 0.8);
+  }
+}
+
+/* Styling for the App-link if needed */
 .App-link {
   color: #61dafb;
 }
