@@ -24,7 +24,8 @@ function Resources() {
       flexDirection: 'column',
       justifyContent: 'center',
       alignItems: 'center',
-      height: '100vh', // Full height of the viewport
+      backgroundColor: '#81D8D0',
+      minHeight: '100vh',  // Full height of the viewport
     }}>
       <h1 style={{ marginBottom: '40px', fontFamily: 'Outfit', fontSize: '50px'}}>Resources</h1> {/* Increased marginBottom for more space */}
       <div style={{
