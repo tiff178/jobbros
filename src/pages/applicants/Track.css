@@ -1,24 +1,37 @@
+/* Home Button */
 .HomeBtn {
   position: absolute;
   top: 20px;
   right: 20px;
   cursor: pointer;
   text-align: right;
+  color: white;
 }
 
+/* Main container */
 .TrackContainer {
   padding: 20px;
   font-family: Arial, sans-serif;
   text-align: center;
-  background-color: #81D8D0;
+  background: radial-gradient(circle at center, #040406, #13111C 60%, #040406 100%);
   min-height: 100vh;
-  color: #000;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  box-shadow: inset 0 0 30px rgba(0, 162, 255, 0.2), 
+              inset 0 0 40px rgba(255, 255, 255, 0.1);
 }
 
 h1 {
   margin-bottom: 20px;
+  font-size: 2rem;
+  color: white;
 }
 
+/* Add Application Form */
 .AddApplicationForm {
   margin-bottom: 20px;
   display: flex;
@@ -30,54 +43,65 @@ h1 {
 .AddApplicationForm select {
   padding: 8px;
   font-size: 16px;
+  border: 1px solid #33323E;
+  border-radius: 8px;
+  background: #13111C;
+  color: white;
 }
 
 .AddApplicationForm button {
   padding: 8px 16px;
-  background-color: #4caf50;
+  background: linear-gradient(90deg, #4caf50, #3e8e41);
   color: white;
   border: none;
-  border-radius: 4px;
+  border-radius: 8px;
   cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .AddApplicationForm button:hover {
-  background-color: #45a049;
+  background: linear-gradient(90deg, #45a049, #388e3c);
 }
 
+/* Applications Table */
 .ApplicationsTable {
   width: 80%;
-  /* Center the table */
   margin: 0 auto;
-  /* Center the table horizontally */
   border-collapse: collapse;
+  background: #13111C;
+  color: white;
+  box-shadow: 0 4px 24px rgba(255, 255, 255, 0.1);
 }
 
 .ApplicationsTable th,
 .ApplicationsTable td {
-  border: 1px solid #ddd;
+  border: 1px solid #33323E;
   padding: 10px;
+  text-align: center;
 }
 
 .ApplicationsTable th {
-  background-color: #f2f2f2;
+  background: #33323E;
+  color: #dcdcdc;
+  text-transform: uppercase;
 }
 
 .ApplicationsTable tr:nth-child(even) {
-  background-color: #f9f9f9;
+  background-color: #1e1e26;
 }
 
 .ApplicationsTable tr:hover {
-  background-color: #ddd;
+  background-color: #2e2e3c;
 }
 
 .ApplicationsTable button {
   padding: 5px 10px;
-  background-color: #008cba;
+  background: #008cba;
   color: white;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .ApplicationsTable button:hover {

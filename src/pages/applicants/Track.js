@@ -12,8 +12,8 @@ function Track() {
 
   // State for job applications
   const [applications, setApplications] = useState([
-    { company: "Google", job: "Software Engineer", applied: "Yes", status: "Interviewing" },
-    { company: "Amazon", job: "Data Scientist", applied: "No", status: "Not Applied" },
+    { company: "Qualcomm", job: "Data Analyst", applied: "Yes", status: "Interviewing" },
+    { company: "Uber", job: "Data Engineer", applied: "No", status: "Not Applied" },
   ]);
 
   // State for adding a new application
