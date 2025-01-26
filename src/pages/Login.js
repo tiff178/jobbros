@@ -11,14 +11,16 @@ function Login() {
     return (
         <GoogleOAuthProvider clientId={CLIENT_ID}>
             <div className="App">
-
                 {/* Navbar with logo image */}
                 <nav className="navbar">
                     <img src={logo} alt="jobbros logo" className="navbar-logo" />
                 </nav>
 
                 <header className="App-header">
-                    <h2>Sign In with Google</h2>
+                    {/* Slogan above the Google Login */}
+                    <div className="slogan">From Bros to Pros</div>
+
+                    <h4>Sign In with Google</h4>
 
                     {/* Google Login Button */}
                     <GoogleLogin
@@ -27,22 +29,22 @@ function Login() {
                             console.log("Decoded Token", decoded);
                             console.log("Login Success", credentialResponse);
 
-                        const userData = {
-                            email: decoded.email,
-                            name: decoded.name,
-                            profileURL: decoded.picture
-                        };
+                            const userData = {
+                                email: decoded.email,
+                                name: decoded.name,
+                                profileURL: decoded.picture
+                            };
 
-                        localStorage.setItem("user", JSON.stringify(userData));
+                            localStorage.setItem("user", JSON.stringify(userData));
 
                             console.log("User Data", userData);
 
-                        navigate("/home");
-                    }}
-                    onError={() => {
-                        console.log("Login Failed");
-                    }}
-                />
+                            navigate("/home");
+                        }}
+                        onError={() => {
+                            console.log("Login Failed");
+                        }}
+                    />
                 </header>
             </div>
         </GoogleOAuthProvider>
