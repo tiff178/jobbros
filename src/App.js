@@ -5,7 +5,6 @@ import Search from "./pages/applicants/Search"
 import Track from "./pages/applicants/Track"
 import Saved from "./pages/applicants/Saved"
 import Resources from "./pages/applicants/Resources"
-import Logout from "./pages/applicants/Logout";
 import './App.css'
 
 function App() {
@@ -18,7 +17,6 @@ function App() {
         <Route path="/saved" element={<Saved />} />
         <Route path="/track" element={<Track />} />
         <Route path="/resources" element={<Resources />} />
-        <Route path="/logout" element={<Logout />} />
       </Routes>
     </Router>
   );

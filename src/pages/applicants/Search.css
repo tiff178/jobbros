@@ -1,7 +1,5 @@
 /* General container for the page */
 .SearchContainer {
-    width: 1440px;
-    height: 1024px;
     padding: 20px 356px;
     background: #81D8D0;
     display: flex;

@@ -9,8 +9,9 @@ function Login() {
     return (
         <GoogleOAuthProvider clientId={CLIENT_ID}>
             <div className="App">
+
                 <header className="App-header">
-                <h1>Sign In with Google</h1>
+                <h2>Sign In with Google</h2>
 
                 {/* Google Login Button */}
                 <GoogleLogin
