@@ -47,7 +47,8 @@ function Resources() {
   ];
 
   return (
-    <div
+    <div className="Resources">
+      <div
       className="container py-4 d-flex flex-column align-items-center justify-content-center"
       style={{ minHeight: "100vh" }}
     >
@@ -94,6 +95,8 @@ function Resources() {
         ))}
       </div>
     </div>
+    </div>
+
   );
 }
 

@@ -42,7 +42,7 @@ function Home() {
         </div>
 
         {/* Right Section */}
-        <div className="Main col-7">
+        <div className="RightSection col-7">
           <div className="Notifications">
             <img src={notificationIcon} alt="Notifications" style={{ height: "55px" }} />
           </div>
@@ -52,9 +52,6 @@ function Home() {
             </div>
             <div className="Button" onClick={() => navigate("/track")}>
               Application Tracking
-            </div>
-            <div className="Button" onClick={() => navigate("/saved")}>
-              Saved Jobs
             </div>
             <div className="Button" onClick={() => navigate("/resources")}>
               Resources
