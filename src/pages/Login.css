@@ -2,26 +2,46 @@
 .Main {
     background: radial-gradient(circle at center, #040406, #13111C 60%, #040406 100%);
     color: white;
-    height: 100vh; /* Full-screen height */
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Space out header, content, and footer */
+    justify-content: space-between;
     align-items: center;
     padding: 0;
-    box-shadow: inset 0 0 30px rgba(0, 162, 255, 0.2),
-        inset 0 0 40px rgba(255, 255, 255, 0.1);
+    box-shadow: inset 0 0 30px rgba(0, 162, 255, 0.2), inset 0 0 40px rgba(255, 255, 255, 0.1);
 }
 
 /* Navbar styling */
 .Navbar {
     width: 100%;
     text-align: center;
-    padding: 10px 0;
+    padding: 10px 20px;
     background: transparent;
 }
 
-.Navbar-logo {
-    height: 50px;
+/* JobBros Logo */
+.JobBrosLogo {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: "Decovar Draw", sans-serif;
+    background: linear-gradient(90deg, #a67d83, #616cd3, #84fafc, #fdfbf3, #f9f697, #f4d186);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0px 4px 6px rgba(255, 255, 255, 0.3), 0px 6px 10px rgba(0, 162, 255, 0.2);
+    animation: glowing-logo 5s linear infinite;
+}
+
+/* Glowing logo animation */
+@keyframes glowing-logo {
+    0% {
+        text-shadow: 0px 4px 6px rgba(255, 255, 255, 0.3), 0px 6px 10px rgba(0, 162, 255, 0.2);
+    }
+    50% {
+        text-shadow: 0px 6px 12px rgba(255, 255, 255, 0.5), 0px 8px 14px rgba(0, 162, 255, 0.4);
+    }
+    100% {
+        text-shadow: 0px 4px 6px rgba(255, 255, 255, 0.3), 0px 6px 10px rgba(0, 162, 255, 0.2);
+    }
 }
 
 /* Main content styling */
@@ -30,10 +50,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; /* Center content vertically */
-    gap: 40px; /* Adds equal spacing between items */
-    height: 100vh; /* Full viewport height */
-    margin: 0; /* Removes any default margin */
+    justify-content: center;
+    gap: 40px;
+    height: 100vh;
+    margin: 0;
 }
 
 /* Slogan */
@@ -41,9 +61,8 @@
     margin: 0;
     font-size: 6vw;
     font-weight: 400;
-    letter-spacing: 0.4rem; /* Adjusted spacing for better fit */
+    letter-spacing: 0.4rem;
     font-family: 'Decovar Draw', sans-serif;
-    font-variation-settings: 'RSEC' 60.00;
     background: linear-gradient(to bottom, #a67d83 0%, #616cd3 20%, #84fafc 43%, #fdfbf3 60%, #f9f697 82%, #f4d186 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -52,14 +71,13 @@
 
 /* Google Login Button */
 .GoogleLogin {
-    transform: scale(2.0);
-    transition: transform 0.2s ease; 
+    transform: scale(1.3);
+    transition: transform 0.2s ease;
 }
 
 .GoogleLogin:hover {
-    transform: scale(1.3);
+    transform: scale(1.5);
 }
-
 
 /* Footer styling */
 .Footer {
@@ -67,7 +85,6 @@
     text-align: center;
     padding: 10px 0;
     font-size: 0.9rem;
-    background: transparent;
     color: rgba(255, 255, 255, 0.8);
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
