@@ -1,20 +1,34 @@
+/* App.css */
+
+/* Overall page styling */
 .App {
   text-align: center;
+  font-family: Arial, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Navbar with logo image */
+.navbar {
+  width: 100%;
+  background-color: #81D8D0; /* Light blue color for the navbar */
+  color: white;
+  padding: 15px 0;
+  position: fixed; /* Sticks to the top */
+  top: 0;
+  left: 0;
+  z-index: 10; /* Ensures navbar is on top */
+  display: flex;
+  justify-content: center; /* Centers the logo */
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar-logo {
+  max-height: 100px;  /* Adjust the size of the logo as needed */
+  width: auto;
 }
 
+/* Content section (Google Sign In) */
 .App-header {
-  background-color: #282c34;
+  background-color: #282c34; /* Keep the original dark background */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,17 +36,9 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  padding-top: 80px; /* Adds space below the fixed navbar */
 }
 
 .App-link {
   color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
