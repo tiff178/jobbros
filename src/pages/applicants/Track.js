@@ -1,7 +1,15 @@
 import React, { useState } from "react";
+import homeIcon from "./img/home.png";
+import { useNavigate } from "react-router-dom";
 import "./Track.css";
 
 function Track() {
+    const navigate = useNavigate();
+  
+  const handleHomeButtonClick = () => {
+    navigate("/home");
+  };
+
   // State for job applications
   const [applications, setApplications] = useState([
     { company: "Google", job: "Software Engineer", applied: "Yes", status: "Interviewing" },
@@ -38,6 +46,14 @@ function Track() {
 
   return (
     <div className="TrackContainer">
+      <div className="HomeBtn mb-3">
+        <img
+          onClick={handleHomeButtonClick}
+          src={homeIcon}
+          alt="Home"
+          style={{ height: "55px" }}
+        />
+      </div>
       <h1>Application Tracking</h1>
 
       {/* Add Application Form */}

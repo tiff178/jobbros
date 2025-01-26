@@ -1,9 +1,25 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+import homeIcon from "./img/home.png";
 import './Search.css'; 
 
 function Search() {
+  const navigate = useNavigate();
+  
+  const handleHomeButtonClick = () => {
+    navigate("/home");
+  };
+
   return (
     <div className="SearchContainer">
+      <div className="HomeBtn">
+        <img
+          onClick={handleHomeButtonClick}
+          src={homeIcon}
+          alt="Home"
+          style={{ height: "55px" }}
+        />
+      </div>
       {/* Header Section */}
       <header className="SearchHeader">
         <div className="SearchBar">
