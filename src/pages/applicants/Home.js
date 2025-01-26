@@ -1,10 +1,13 @@
 import React from "react";
 import notificationIcon from "./img/notification-icon.svg";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import "./Home.css";
 import "bootstrap/dist/css/bootstrap.css";
 
+
 function Home() {
+  const location = useLocation();
+  const { user } = location.state || {};
   const navigate = useNavigate();
 
   const handleLogout = () => {
@@ -20,8 +23,8 @@ function Home() {
       <div className="row">
         <div className="col-5 SiteBar">
           <div className="User">
-            <div className="UserImage"></div>
-            <h2>User Name</h2>
+            <img src={user?.picture} className="UserImage" alt="Your Profile"/>
+            <h2>{user?.name}</h2>
           </div>
           <div className="User">
             <h4 onClick={() => navigate("/profile")}>Update Profile</h4>
