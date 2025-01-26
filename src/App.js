@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Login from "./pages/Login" 
 import Home from "./pages/applicants/Home"
+import Resume from "./pages/applicants/Resume"
 import Search from "./pages/applicants/Search"
 import Track from "./pages/applicants/Track"
 import Saved from "./pages/applicants/Saved"
@@ -13,6 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/home" element={<Home />} />
+        <Route path="/resume" element={<Resume />} />
         <Route path="/jobs" element={<Search />} />
         <Route path="/saved" element={<Saved />} />
         <Route path="/track" element={<Track />} />
