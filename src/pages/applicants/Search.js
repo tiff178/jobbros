@@ -36,7 +36,7 @@ function Search() {
         <div className="JobCard">
           <div className="JobDetails">
             <img
-              src="./gitlab-img.png"
+              src="./gitlab-img.svg"
               alt="GitLab"
               className="CompanyLogo"
             />
@@ -56,7 +56,7 @@ function Search() {
         <div className="JobCard">
           <div className="JobDetails">
             <img
-              src="./paypal-img.png"
+              src="./paypal-img.svg"
               alt="Paypal"
               className="CompanyLogo"
             />
@@ -76,7 +76,7 @@ function Search() {
         <div className="JobCard">
           <div className="JobDetails">
             <img
-              src="./total-img.png"
+              src="./total-img.svg"
               alt="Total"
               className="CompanyLogo"
             />
@@ -96,7 +96,7 @@ function Search() {
         <div className="JobCard">
           <div className="JobDetails">
             <img
-              src="./dribble-img.png"
+              src="./dribble-img.svg"
               alt="Dribble"
               className="CompanyLogo"
             />
@@ -116,7 +116,7 @@ function Search() {
         <div className="JobCard">
           <div className="JobDetails">
             <img
-              src="./google-img.png"
+              src="./google-img.svg"
               alt="Google"
               className="CompanyLogo"
             />
@@ -136,7 +136,7 @@ function Search() {
         <div className="JobCard">
           <div className="JobDetails">
             <img
-              src="./uber-img.png"
+              src="./uber-img.svg"
               alt="Uber"
               className="CompanyLogo"
             />
